@@ -9,13 +9,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
-</head>
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous"></head>
 <body>
     <section class="header">
 <nav>
     <a href="index.html"><img src="./images/logo.png.png"></a>
-<div class="nav-links">
-    <ul>
+<div class="nav-links" id="navLinks">
+    <i class="fas fa-times" onclick="hideMenu()"></i>
+<ul>
         <li><a href="">HOME</a></li>
         <li><a href="">ABOUT</a></li>
         <li><a href="">CLIENTS</a></li>
@@ -26,18 +28,75 @@
 
     </ul>
 </div>
+<i class="fas fa-bars" onclick="showMenu()"></i>
+
 
 </nav>
 <div class="text-box">
     <h1>Mentor,Motivate and Inspire</h1>
     <p>I am what I choose to be, not what happens to me</p>
+    <!-- add more font to this paragraph   -->
+
     <a href="" class="hero-btn">Visit us to know more</a>
 
 </div>
     </section>
 
 
+    <!-- courses -->
+    <section class="courses">
+        <h1>Courses we offer</h1>
+        <p>We offer the best courses for students, teachers and parents</p>
+        <div class="row">
+            <div class="courses-col">
+                <h3>Personal Finance Managements</h3>
+                <img src="./images/personal finance.png" class="finance" alt="">
+            </div>
+                <div class="courses-col">
+                 <h3>Basic Counselling for Teachers</h3>
+                 <img src="./images/basi counselling.png" class="basic" alt="">
 
+                </div>
+                <div class="courses-col">
+                  
+                <h3>Personal Branding</h3>
+                     <img src="./images/personal branding.jpg" c;ass="personal" alt="">
+                </div>
+                <div class="courses-col">
+                                    <h3>Public Speaking</h3>
+                                    <img src="./images/public speaking.jpg"class="public" alt="">
+                </div>
+               
+            <div class="courses-col">
+                <h3>Parenting 101</h3>
+                <img src="./images/parenting 101.jpg" class="parenting" alt="">
+            </div>
+            
+        </div>
+
+    </section>
+
+<!-- about page -->
+<section class="">
+
+</section>
+
+
+
+
+
+
+<!-- javascript for toggle menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0"; 
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+    
+</script>
 
 </body>
 </html>
