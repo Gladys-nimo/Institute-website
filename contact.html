@@ -1,0 +1,110 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institute website</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://kit.fontawesome.com/e50dce8e72.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,600;0,700;1,300&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"> -->
+
+<body>
+    <section class="sub-header">
+<nav>
+    <a href="index.html"><img src="./images/logo.png.png"></a>
+<div class="nav-links" id="navLinks">
+    <i class="fas fa-times" onclick="hideMenu()"></i>
+<ul>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <!-- <li><a href="clients.html">CLIENTS</a></li> -->
+    <li><a href="achievers-CLUB.html">ACHIEVERS CLUB</a></li>
+    <li><a href="course.html">COURSES</a></li>
+     <li><a href="contact.html">CONTACTS</a></li>
+
+    </ul>
+</div>
+<i class="fas fa-bars" onclick="showMenu()"></i>
+
+
+</nav>
+<h1>Contact Us</h1>
+</section>
+<!-- contact us -->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7977.965318523094!2d36.827753175983695!3d-1.1726913965785113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3c6280decd87%3A0x1a1a1908e6fd13e9!2sKiambu!5e0!3m2!1sen!2ske!4v1626412438333!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+</section>
+<section class="contact-us">
+    <div class="row">
+        <div class="contact-col">
+<div>
+    <i class="fas fa-home"></i>
+    <span>
+        <h5>XYZ Road, ABC Building</h5>
+        <p>Kiambu, Lari, IN</p>
+    </span>
+</div>
+<div>
+    <i class="fas fa-phone"></i>
+    <span>
+        <h5>+254700241162</h5>
+        <p>Monday to Saturday, 10am to 6pm</p>
+    </span>
+</div>
+<div>
+    <i class="fas fa-envelope"></i>    <span>
+        <h5>info@dearostinstitute.co.ke
+        </h5>
+        <p>Email us your query</p>
+    </span>
+</div>
+        </div>
+        <div class="contact-col">
+            <form action="form-handler.php" method="POST">
+                <input type="text" name="name"  placeholder="Enter your name" required>
+                <input type="text" name="email"  placeholder="Enter your address" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea  rows="8" name="message" placeholder="message" required></textarea>
+                <button type="submit" class="hero-btn blue-btn">Send Message</button>
+            </form>
+    </div>
+    </div>
+</secion>
+    
+
+  
+<!-- footer -->
+<section class="footer">
+    <h4>About us</h4>
+    <p>DeArosto Institute of personal development, established in the year 2017, aims to improve the focus and effectiveness of individuals, hence the improvement of society.<br> We aspire to help with what matters; the way you feel daily.
+    </p>
+    <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter-square"></i>
+
+
+    </div>
+</section>
+
+
+
+<!-- javascript for toggle menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0"; 
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+   
+    
+</script>
+
+</body>
+</html>
