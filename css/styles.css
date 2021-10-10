@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Nunito Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 .header{
     min-height: 100vh;
@@ -68,16 +69,14 @@ nav{
       display: inline-block;
       text-decoration: none;
       color: #fff;
-      border: 1px solid #fff;
       padding: 12px 34px;
-      font-size: 13px;
+      font-size: 18px;
       background: transparent;
       position: relative;
       cursor: pointer;
   }
   .hero-btn:hover{
-      border: 1px solid #1e2092;
-      background:#1e2092;
+      color: #f7c923;
       transition: 1s;
   }
 
@@ -478,4 +477,69 @@ nav .fas{
     outline: none;
     border: 1px solid #ccc;
     box-sizing: border-box;
+}
+.navigate-below{
+    width: 30px;
+    position: sticky;
+    padding-top: 10vh;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-animation-name: hvr-icon-down;
+    animation-name: hvr-icon-down;
+    -webkit-animation-duration: 1.75s;
+    animation-duration: 1.75s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count:infinite;
+}
+@keyframes hvr-icon-down {
+    0%,
+      50%,
+      100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+    25%,
+      75% {
+      -webkit-transform: translateY(6px);
+      transform: translateY(6px);
+    }
+  }
+
+
+#about-section{
+    min-height: 90vh;
+}
+#about-section h1 {
+    font-weight: bolder;
+    font-size: 55px;
+}
+#about-section p {
+    font-weight: bold;
+    font-size: 18px;
+} 
+#about-section a {
+    padding-top: 20px;
+    text-underline-offset: 8px;
+    font-weight: bold;
+    text-decoration: none;
+}
+#about-section a:hover{
+    color: #f7c923;
+    text-decoration: none;
+    transition: 1.75s;
+}
+.view-icon{
+    background: grey;
+    border-radius: 50%;
+}
+
+.img-logo{
+    width: 15vh;
+    height: 15vh;
+    float: right;
 }
