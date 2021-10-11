@@ -324,9 +324,12 @@ nav .fas{
     text-align: center;
 }
 
+.footer .link {
+    cursor: pointer;
+}
+
 .footer p {
     color: white;
-    cursor: pointer;
     font-size: 12px;
 }
 
