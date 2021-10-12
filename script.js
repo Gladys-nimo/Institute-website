@@ -1,13 +1,3 @@
-$(document).ready(function() {
-    $(window).scroll(function(){
-        if(this.scrollY > 20){
-            $('.navbar').addClass("sticky");
-        } else {
-            $('.navbar').removeClass("sticky");
-        }
-    })
-})
-
 var navLinks = document.getElementById("navLinks");
 
 function showMenu() {
@@ -17,36 +7,29 @@ function hideMenu() {
     navLinks.style.right = "-200px";
 }
 
-function open_panel() {
-    slideIt();
-    var a = document.getElementById("sidebar");
-    a.setAttribute("id", "sidebar1");
-    a.setAttribute("onclick", "close_panel()");
-}
+const spans = document.querySelectorAll('.word span');
+spans.forEach((span, idx) => {
+    span.addEventListener('scroll', (e) => {
+        e.target.classList.add('active');
+    });
+    span.addEventListener('animationend', (e) => {
+        e.target.classList.remove('active');
+    });
+    setTimeout(() => {
+        span.classList.add('active');
+    }, 750 * (idx + 1))
+});
 
-function slideIt() {
-    var slidingDiv = document.getElementById("slider");
-    var stopPosition = 0;
-    if (parseInt(slidingDiv.style.right) < stopPosition) {
-        slidingDiv.style.right = parseInt(slidingDiv.style.right) + 2 + "px";
-        setTimeout(slideIt, 1)
-    }
-}
 
-function close_panel() {
-    slideIn();
-    a = document.getElementById("sidebar1");
-    a.setAttribute("id", "sidebar");
-    a.setAttribute("onclick", "open_panel()");
-}
+$(document).ready(function() {
+    $(window).scroll(function(){
+        if(this.scrollY > 20){
+            $('.navbar').addClass("sticky");
+        } else {
+            $('.navbar').removeClass("sticky");
+        }
+    });
+});
 
-function slideIn() {
-    var slidingDiv = document.getElementById("slider");
-    var stopPosition = -342;
-    if (parseInt(slidingDiv.style.right) > stopPosition) {
-        slidingDiv.style.right = parseInt(slidingDiv.style.right) -2 + "px";
-        setTimeout(slideIn, 1);
-    }
-}
 
 
