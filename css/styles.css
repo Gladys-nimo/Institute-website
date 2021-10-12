@@ -549,24 +549,24 @@ nav .fas{
 
 
 #about-section{
-    min-height: 80vh;
+    min-height: 60vh;
 }
 #about-section h1 {
     font-weight: bolder;
     font-size: 55px;
 }
-#about-section p {
+#about-section p, #achievers-section p {
     font-weight: bold;
     font-size: 18px;
 } 
-#about-section a {
+#about-section a, #achievers-section a {
     padding-top: 20px;
     text-underline-offset: 8px;
     font-weight: bold;
     text-decoration: none;
 }
-#about-section a:hover{
-    color: #f7c923;
+#about-section a:hover, #achievers-section a:hover{
+    color: #8b700f;
     text-decoration: none;
     transition: 1.75s;
 }
@@ -585,3 +585,52 @@ nav .fas{
     padding: 10px;
 }
 
+#achievers-section{
+    min-height: 80vh;
+}
+.gif{
+    background: url("../images/walking_man.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 80vh;
+}
+ #achievers-section h1{
+     font-weight: bold;
+     text-decoration: underline;
+ }
+
+ .word {
+     perspective: 1000px;
+ }
+ .word span {
+     display: inline-block;
+     font-size: 30px;
+     user-select: none;
+     padding-bottom: 15px;
+ }
+
+ .word span:nth-child(2).active {
+    animation: shrinkjump 3s ease-in-out infinite;
+    transform-origin: bottom center;
+ }
+
+ @keyframes shrinkjump {
+     10%, 35% {
+         transform: scale(1, 1.5)
+         translate(0, 0);
+     }
+     40% {
+        transform: rotateY(10deg);
+    }
+     45%, 50% {
+         transform: scale(1.2)
+         translate(0, -20px);
+     }
+     80% {
+         transform: scale(1)
+         translate(0, 0);
+     }
+     90% {
+        transform: rotateX(30deg);
+    }
+ }
