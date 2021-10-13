@@ -344,6 +344,12 @@ nav .fas{
 .footer .subscribe-btn{
     padding: 10px;
 }
+
+#mc_embed_signup {
+    background: #1e2092;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+} 
 .icons .fab{
     color: white;
     margin: 0 10px;
