@@ -1,0 +1,15 @@
+.about h1 {
+    text-align: center;
+}
+
+.about h5 {
+    font-weight: bold;
+}
+.col-md-6 img{
+    width: 75%;
+    height: auto;
+}
+.about-us-image {
+    border-radius: 50px;
+    height: 3vh;
+}

@@ -1,0 +1,31 @@
+.club-content .img {
+    float: right;
+    padding: 15px;
+    border-radius: 500px;
+}
+.members-content h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h2{
+    font-weight: bold;
+    /* font-size: 18px; */
+}
+
+.btn a{
+    text-decoration: none;
+    color: aliceblue;
+}
+ .form-group{
+     text-align: center;
+ }
+
+ .right-col {
+     padding-left: 30px;
+     border-left: 1px solid grey;
+ }
+
+ .members-content {
+     border-bottom: 1px solid grey;
+ }
