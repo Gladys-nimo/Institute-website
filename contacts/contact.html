@@ -7,10 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="./contacts.css" type="text/css">
     <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/e50dce8e72.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,600;0,700;1,300&display=swap"
         rel="stylesheet">
@@ -20,7 +23,7 @@
 
 <body>
     <section class="sub-header">
-        <nav>
+        <nav class="navbar">
             <a href="../index.html"><img src="../images/logo.png.png"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fas fa-times" onclick="hideMenu()"></i>
@@ -37,10 +40,10 @@
 
 
         </nav>
-        <h1>Contact Us</h1>
     </section>
     <!-- contact us -->
     <section class="location">
+        <h2>Contact Us</h2>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7977.965318523094!2d36.827753175983695!3d-1.1726913965785113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3c6280decd87%3A0x1a1a1908e6fd13e9!2sKiambu!5e0!3m2!1sen!2ske!4v1626412438333!5m2!1sen!2ske"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -59,14 +62,20 @@
                 <div>
                     <i class="fas fa-phone"></i>
                     <span>
-                        <h5>+254700241162</h5>
+                        <h5><a href="tel:+254700241162">+254700241162</a></h5>
+                        <p>Monday to Saturday, 10am to 6pm</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <span>
+                        <h5><a href="https://us7.list-manage.com/contact-form?u=1453e81d15c262af48175b196&form_id=66754f7092a8e0f563b7face02b359d7">Send Us a Message</a></h5>
                         <p>Monday to Saturday, 10am to 6pm</p>
                     </span>
                 </div>
                 <div>
                     <i class="fas fa-envelope"></i> <span>
-                        <h5>info@dearostinstitute.co.ke
-                        </h5>
+                        <h5><a href="mailto: info@dearostinstitute.co.ke">info@dearostinstitute.co.ke</a></h5>
                         <p>Email us your query</p>
                     </span>
                 </div>

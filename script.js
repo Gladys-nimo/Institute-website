@@ -1,3 +1,13 @@
+$(document).ready(function() {
+    $(window).scroll(function(){
+        if(this.scrollY > 20){
+            $('.navbar').addClass("sticky");
+        } else {
+            $('.navbar').removeClass("sticky");
+        }
+    });
+});
+
 var navLinks = document.getElementById("navLinks");
 
 function showMenu() {
@@ -20,16 +30,6 @@ spans.forEach((span, idx) => {
     }, 750 * (idx + 1))
 });
 
-
-$(document).ready(function() {
-    $(window).scroll(function(){
-        if(this.scrollY > 50){
-            $('.navbar').addClass("sticky");
-        } else {
-            $('.navbar').removeClass("sticky");
-        }
-    });
-});
 
 
 
