@@ -51,7 +51,7 @@
     </section>
     <section class="contact-us">
         <div class="row">
-            <div class="contact-col">
+            <div class="col-md-6">
                 <div>
                     <i class="fas fa-home"></i>
                     <span>
@@ -80,13 +80,18 @@
                     </span>
                 </div>
             </div>
-            <div class="contact-col">
+            <div class="col-md-6">
                 <form action="../mail.php" method="POST">
-                    <input type="text" name="name" placeholder="Enter your name" required>
-                    <input type="text" name="email" placeholder="Enter your address" required>
-                    <input type="text" name="subject" placeholder="Enter your subject" required>
-                    <textarea rows="8" name="message" placeholder="message" required></textarea>
-                    <button type="submit" class="hero-btn blue-btn">Send Message</button>
+                    <h3>Apply to be one of our Sponsors</h3>
+                    <div class="form-group">
+                        <label for="name">Enter Your Name :</label>
+                        <input type="text" class="form-control" name="name" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Enter Your Email</label>
+                        <input type="email" name="email" id="email" class="form-control" required>
+                    </div>
+                    <button class="btn btn-primary" type="submit">Submit</button>
                 </form>
                 
             </div>
